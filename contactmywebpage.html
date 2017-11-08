@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<title>Contact Panda Site</title>
 	<link rel="stylesheet" type="text/css" href="custom.css">
-	<script type="text/javascript" src=main.js></script>
+	
+	
 </head>
 <body>
 
-<nav>
-	<h3>
-		<ul>
-			<li class="tabs"><a href="index.html">Home</a></li>
-			<li class="tabs"><a href="picturemywebpage.html">Picture Gallery</a></li>
-			<li class="tabs"><a href="contactmywebpage.html">Contact</a></li>
-		</ul>
-	</h3>
-</nav>
+	<nav>
+		<h3>
+			<ul>
+				<li class="tabs"><a href="index.html">Home</a></li>
+				<li class="tabs"><a href="picturemywebpage.html">Picture Gallery</a></li>
+				<li class="tabs"><a href="contactmywebpage.html">Contact</a></li>
+			</ul>
+		</h3>
+	</nav>
 
-<header>
-	<h1>CONTACT ME!</h1>
-</header>
+	<header id="main-section">
+		<h1>CONTACT ME!</h1>
+	</header>
 
-<div>
-	<h1 id="title">Your information goes here</h1>
-		<form>
-			<input type="text" value="username">
-			<input type="text" value="email">
-			<input type="password" value="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-		</form>
-</div>
+	<div>
+		<h1 id="title">Your information goes here</h1>
+			<form>
+				<input type="text" id="username">
+				<input type="text" id="email">
+				<input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+			</form>
+	</div>
 
-<button id='theButton'>Submit</button>
-
-<div id="container"></div>
-
+	<button id='theButton' onclick="checkLogIn()">Submit</button>
+<script type="text/javascript" src=main.js></script>
 </body>
-</html>
-</body>
+
 </html>
